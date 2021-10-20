@@ -8,13 +8,23 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-emilia-core/gatsby-config.js
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+    // siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+		siteTitle: `Orbit X`,
+		siteTitleAlt: `Orbit X`,
+		siteHeadline: `Orbit X ART`,
+		author: `@dcxSt`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+				location: `Montreal, Canada`,
+				name: `Orbit X`,
+				showThemeAuthor: false,
+				socialMedia: [{}],
+				mdx: true,
+			},
     },
     googleAnalyticsTrackingId && {
       resolve: `gatsby-plugin-google-analytics`,
@@ -26,9 +36,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Emilia - @lekoarts/gatsby-theme-emilia`,
-        short_name: `Emilia`,
-        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
+				name: `Orbit X`,
+        short_name: `Orbit X`,
+        description: `Orbit X portfolio`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#3182ce`,
